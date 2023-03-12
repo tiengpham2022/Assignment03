@@ -1,0 +1,104 @@
+/* màn hình tablet 900px */
+
+@media (max-width: 900px) {
+  /*----------------- PHAN 1 - NAVBAR --------------------*/
+  /*----------------- PHAN 1 - NAVBAR --------------------*/
+  #nav-bar .name {
+    display: none;
+  }
+  .nav-item {
+    flex-basis: 100%;
+  }
+  /*----------------- PHAN 2 - INFO CA NHAN --------------------*/
+  /*----------------- PHAN 2 - INFO CA NHAN --------------------*/
+  /* giữ nguyên nhưng chỉnh lại canh lề cho phù hợp */
+  #personal-info,
+  #target {
+    padding: 40px;
+  }
+  /*----------------- PHAN 3 - Thông tin nghề nghiệp --------------------*/
+  /*----------------- PHAN 3 - Thông tin nghề nghiệp  --------------------*/
+  /* Chia grid từ 3 cột thành 2 cột */
+  #job-info .containers {
+    /* width: 100%;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    gap: 20px; */
+
+    /* cho flex column - tự động wrap sang cột 2 khi chiều cao được 3 ô */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    height: 1950px;
+  }
+  .job-info-item,
+  .job-info-item2 {
+    /* width: 100%; */
+    width: 48%;
+  }
+
+  /* ----------------- PHẦN 4 chứng chỉ - giải thưởng----------------- */
+  /* ----------------- PHẦN 4 chứng chỉ - giải thưởng----------------- */
+  /* chuyển sang flex cột cho hình và nội dung */
+  .certificate-col {
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .certificate-img {
+    width: 90%;
+    height: 70%;
+    padding-bottom: 20px;
+  }
+  /* kẻ boder giữa 2 item */
+  .certificate-border-left::before {
+    height: 220px;
+    left: 47.5%;
+    top: 16px;
+  }
+
+  /* ------------Dự án ------------
+  ------------Dự án ------------*/
+  .project-item-image {
+    width: 100%;
+  }
+
+  /* Cho kích thước mỗi cột dự án */
+  #project .project-items .project-item {
+    width: 32%;
+  }
+
+  /* phần Project Charter */
+  /* các item thành 1 cột */
+  .pc-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  /* trong 1 item cũng thành 1 cột */
+  .pc-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  /* cho hàng content xếp left */
+  .pc-content {
+    padding: 10px 0;
+    align-self: flex-start;
+  }
+
+  /* in - out cho flex column */
+
+  .pc-cols {
+    flex-direction: column;
+  }
+  .pc-content h2 {
+    font-size: 20px;
+  }
+  .pc-row .number {
+    align-self: start;
+  }
+  .border {
+    width: 100%;
+  }
+}

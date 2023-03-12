@@ -1,0 +1,81 @@
+/* màn hình mobile 600px */
+
+@media (max-width: 600px) {
+  /*----------------- PHAN 1 - NAVBAR --------------------*/
+  /*----------------- PHAN 1 - NAVBAR --------------------*/
+  .banner-name h1 {
+    font-size: 22px;
+  }
+  #nav-bar .containers {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #nav-bar .nav-item {
+    padding: 10px 20px;
+    border: none;
+  }
+
+  /*----------------- PHAN 2 - INFO CA NHAN --------------------*/
+  /*----------------- PHAN 2 - INFO CA NHAN --------------------*/
+  /* dựa trên grid đã làm - cho mỗi ô chiếm hết cả hàng */
+  #personal-info,
+  #target {
+    grid-column: 1 / -1;
+  }
+
+  /*----------------- PHAN 3 - Thông tin nghề nghiệp --------------------*/
+  /*----------------- PHAN 3 - Thông tin nghề nghiệp  --------------------*/
+  /* Chia grid từ 3 cột thành 1 cột */
+  #job-info .containers {
+    height: auto;
+  }
+  .job-info-item,
+  .job-info-item2 {
+    padding: 10px 40px;
+    width: 100%;
+  }
+
+  /* ----------------- PHẦN 4 chứng chỉ - giải thưởng----------------- */
+  /* ----------------- PHẦN 4 chứng chỉ - giải thưởng----------------- */
+
+  /* cho 1 cột */
+  .certificate-item {
+    flex-direction: column;
+  }
+  .certificate-col {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #d28484;
+  }
+  .certificate-col:last-child {
+    border-bottom: none;
+  }
+  /* huỷ border giữa 2 hàng - huỷ border giữa 2 item - thêm border bottom*/
+  .certificate-border-top {
+    border: none;
+  }
+  .certificate-border-left::before {
+    display: none;
+  }
+  /* ------------Dự án ------------
+  ------------Dự án ------------*/
+  #project .project-items {
+    flex-direction: column;
+  }
+  /* Cho kích thước mỗi cột dự án */
+  #project .project-items .project-item {
+    width: 100%;
+  }
+
+  /* footer */
+  #footer .containers ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+  }
+  #footer .containers ul li {
+    padding: 10px 0;
+  }
+}
